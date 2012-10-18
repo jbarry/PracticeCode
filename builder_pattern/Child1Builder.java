@@ -17,16 +17,11 @@ class Child1Builder extends ParentBuilder<Child1Builder> {
 	}
 	
 	@Override
-	protected ParentBase getParent() {
-		return child1;
-	}
-
-	@Override
-	protected Child1Builder getThis() {
+	public Child1Builder getThis() {
 		return this;
 	}
 	
-	private Child1 child1;
+	Child1 child1;
 	String child1Property1;
 	String child1Property2;
 }
